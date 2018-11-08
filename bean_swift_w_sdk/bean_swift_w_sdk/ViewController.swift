@@ -45,7 +45,7 @@ class ViewController: UIViewController, PTDBeanManagerDelegate, PTDBeanDelegate 
     }
     
     func beanManager(_ beanManager: PTDBeanManager!, didDiscover bean: PTDBean!, error: Error!) {
-        if (bean.name == "Bean") {
+        if (bean.name == "gaby_bean") {
             device = bean
             connectToDevice(device!)
             print("Connected to Bean")
